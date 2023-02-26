@@ -23,7 +23,7 @@ function createBox(event) {
 }
 
 function createBoxes(amount) {
-  const array = Array.from({ length: amount }, (item, i) => {
+  const array = Array.from({length: amount}, (item, i) => {
     const divEl = document.createElement("div");
     divEl.style.backgroundColor = `${getRandomHexColor()}`;
     divEl.style.height = `${i * 10 + 30}px`;
@@ -31,7 +31,6 @@ function createBoxes(amount) {
 
     return divEl;
   });
-  // console.log(array);
   return array;
 }
 
